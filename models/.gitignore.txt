@@ -1,0 +1,6 @@
+# Tüm .pkl dosyalarını hariç tut:
+*.pkl
+
+# Ama şu dosyaları ekle:
+!models/stock_availability_model.pkl
+!models/stock_vectorizer.pkl
