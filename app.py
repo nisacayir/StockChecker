@@ -30,6 +30,7 @@ if not os.path.exists(vectorizer_path):
     raise FileNotFoundError(
         f"'{vectorizer_path}' bulunamadı. Lütfen vektörleştirici dosyasının doğru yerde olduğundan veya dosya yolunun doğru yazıldığından emin olun.")
 
+
 # Dosyaları yükle
 with open(model_path, "rb") as model_file:
     model = pickle.load(model_file)
