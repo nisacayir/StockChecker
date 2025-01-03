@@ -1,6 +1,0 @@
-selenium
-beautifulsoup4
-scikit-learn
-pandas
-flask
-webdriver_manager
