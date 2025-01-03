@@ -99,28 +99,28 @@ def extract_features(row):
     }
 
 
-# 1. Özellikleri ve etiketleri hazırlama
+#etiketleri hazırlama
 features = [extract_features(d) for d in data]
 labels = [d["is_stock_available"] for d in data]
 
-# 2. Vektörleştirme
+#vektörleştirme
 vectorizer = DictVectorizer(sparse=False)
 X = vectorizer.fit_transform(features)
 
 # Veri setini eğitim ve test olarak ayır
 X_train, X_test, y_train, y_test = train_test_split(X, labels, test_size=0.2, random_state=42)
 
-# 3. Modeli yeniden eğit
+# modeli yeniden eğit
 model = RandomForestClassifier(random_state=42)
 model.fit(X_train, y_train)
 
-# 4. Performans Değerlendirme
+# performans değerlendirme
 y_pred = model.predict(X_test)
 print("Doğruluk (Accuracy):", accuracy_score(y_test, y_pred))
 print("Sınıflandırma Raporu:\n", classification_report(y_test, y_pred))
 
 
-# 5. Modeli ve vektörleştiriciyi kaydet
+# modeli ve vektörleştiriciyi kaydet
 def save_to_pickle(file_path, obj):
     try:
         with open(file_path, "wb") as file:
@@ -130,7 +130,7 @@ def save_to_pickle(file_path, obj):
         print(f"Bir hata oluştu: {e}")
 
 
-# Model ve vektörleştirici kaydetme işlemleri
+# model ve vektörleştirici kaydetme işlemleri
 os.makedirs("models", exist_ok=True)
 model_path = "models/stock_availability_model.pkl"
 vectorizer_path = "models/stock_vectorizer.pkl"

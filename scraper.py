@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 def get_html(url):
     # WebDriverManager ile `ChromeDriver` otomatik ayarlanıyor
     service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service)  # Chrome WebDriver başlatılıyor
+    driver = webdriver.Chrome(service=service)
     driver.get(url)  # Belirtilen URL'e gidiliyor
     html = driver.page_source  # Sayfanın kaynak kodları alınıyor
     driver.quit()  # Tarayıcı kapatılıyor
@@ -19,7 +19,6 @@ def get_html(url):
 def parse_html(html):
     soup = BeautifulSoup(html, "html.parser")
     return soup.find_all(True)  # Tüm HTML etiketlerini döndürür
-
 
 # if __name__ == "__main__":
 #     # Test URL'si

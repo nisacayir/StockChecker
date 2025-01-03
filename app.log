@@ -1,0 +1,12 @@
+2025-01-03 14:46:43,954 - INFO - Model ve vektörleþtirici baþarýyla yüklendi
+2025-01-03 14:46:43,957 - INFO - Flask uygulamasý baþlatýlýyor...
+2025-01-03 14:46:44,019 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-03 14:46:44,019 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-03 14:46:44,022 - INFO -  * Restarting with stat
+2025-01-03 14:46:46,081 - INFO - Model ve vektörleþtirici baþarýyla yüklendi
+2025-01-03 14:46:46,082 - INFO - Flask uygulamasý baþlatýlýyor...
+2025-01-03 14:46:46,098 - WARNING -  * Debugger is active!
+2025-01-03 14:46:46,105 - INFO -  * Debugger PIN: 785-944-511
+2025-01-03 14:46:55,452 - INFO - 127.0.0.1 - - [03/Jan/2025 14:46:55] "[33mGET / HTTP/1.1[0m" 404 -
+2025-01-03 14:48:22,014 - INFO - 127.0.0.1 - - [03/Jan/2025 14:48:22] "[33mGET / HTTP/1.1[0m" 404 -
