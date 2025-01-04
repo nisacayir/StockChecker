@@ -19,8 +19,8 @@ monitoring = False
 last_stock_status = None
 
 # Telegram bot ayarları
-TELEGRAM_BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'  # BotFather'dan aldığınız token
-TELEGRAM_CHAT_ID = 'YOUR_CHAT_ID'  # Telegram kullanıcı ID'niz veya grup ID'niz
+TELEGRAM_BOT_TOKEN = '7913485634:AAEwEGddqVxVvq-32qKFLTYueCZ1SL-KWpA'  # BotFather'dan aldığınız token
+TELEGRAM_CHAT_ID = '7706289153'
 
 # Model ve vektörleştiriciyi yükleme (örnek olarak pickle kullanılmıştır)
 import pickle
