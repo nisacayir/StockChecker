@@ -1,6 +1,8 @@
+pandas
+webdriver_manager
+Flask
 selenium
 beautifulsoup4
+qrcode
+pillow
 scikit-learn
-pandas
-flask
-webdriver_manager

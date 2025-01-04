@@ -1,160 +1,77 @@
-import tkinter as tk
-from tkinter import ttk, messagebox
+from flask import Flask, render_template, request, redirect, url_for, jsonify
+import threading
+import time
+from datetime import datetime
 import pickle
 import os
-from datetime import datetime
-import time
-import threading
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
+import logging
+import requests
+from bs4 import BeautifulSoup
+import qrcode
+from io import BytesIO
+import base64
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-from bs4 import BeautifulSoup
 from selenium.common.exceptions import WebDriverException
 
+# Initialize Flask app
+app = Flask(__name__)
 
-class StockCheckerApp:
-    def __init__(self, root):
-        self.root = root
-        self.root.title("Stok Takip Sistemi")
-        self.root.geometry("800x700")
+# Configure logging
+logging.basicConfig(
+    filename='stock_monitor.log',
+    level=logging.INFO,
+    format='%(asctime)s %(levelname)s: %(message)s'
+)
 
-        # Kontrol değişkenleri
-        self.monitoring = False
-        self.last_stock_status = None
+# Configuration
+class Config:
+    TELEGRAM_BOT_TOKEN = '7913485634:AAEwEGddqVxVvq-32qKFLTYueCZ1SL-KWpA'
+    TELEGRAM_CHAT_ID = '7706289153'
+    CHECK_INTERVAL = 600  # 10 minutes in seconds
+    MODEL_PATH = "models/stock_availability_model.pkl"
+    VECTORIZER_PATH = "models/stock_vectorizer.pkl"
 
-        #model yüklemek icin
-        self.load_model()
+# Stock checker class
+class StockChecker:
+    def __init__(self):
+        self.load_models()
+        self.monitoring_threads = {}
+        self.monitoring_status = {}
 
-        #container duzeni
-        main_frame = ttk.Frame(root, padding="10")
-        main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
-
-        #yazi tipi boyutu
-        style = ttk.Style()
-        style.configure('Title.TLabel', font=('Helvetica', 14, 'bold'))
-
-        #baslık
-        title_label = ttk.Label(main_frame, text="Stok Takip ve Bildirim Sistemi", style='Title.TLabel')
-        title_label.grid(row=0, column=0, columnspan=2, pady=10)
-
-        #design sadece frame icin
-        settings_frame = ttk.LabelFrame(main_frame, text="Ayarlar", padding="10")
-        settings_frame.grid(row=1, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=5)
-
-        #url yazma butonu
-        ttk.Label(settings_frame, text="Ürün URL:").grid(row=0, column=0, sticky=tk.W, pady=5)
-        self.url_entry = ttk.Entry(settings_frame, width=60)
-        self.url_entry.grid(row=0, column=1, sticky=tk.W, pady=5)
-
-        #gonderen alan mail islemleri
-        ttk.Label(settings_frame, text="Gönderen Email:").grid(row=1, column=0, sticky=tk.W, pady=5)
-        self.sender_email = ttk.Entry(settings_frame, width=40)
-        self.sender_email.grid(row=1, column=1, sticky=tk.W, pady=5)
-
-        ttk.Label(settings_frame, text="Email Şifresi:").grid(row=2, column=0, sticky=tk.W, pady=5)
-        self.email_password = ttk.Entry(settings_frame, width=40, show="*")
-        self.email_password.grid(row=2, column=1, sticky=tk.W, pady=5)
-
-        ttk.Label(settings_frame, text="Alıcı Email:").grid(row=3, column=0, sticky=tk.W, pady=5)
-        self.receiver_email = ttk.Entry(settings_frame, width=40)
-        self.receiver_email.grid(row=3, column=1, sticky=tk.W, pady=5)
-
-        #kontrol araligina bakmak icin
-        ttk.Label(settings_frame, text="Kontrol Aralığı (dk):").grid(row=4, column=0, sticky=tk.W, pady=5)
-        self.check_interval = ttk.Spinbox(settings_frame, from_=1, to=60, width=5)
-        self.check_interval.grid(row=4, column=1, sticky=tk.W, pady=5)
-        self.check_interval.set(5) #simdilik bes dk ayarli
-
-        #butonlar icin
-        button_frame = ttk.Frame(main_frame)
-        button_frame.grid(row=2, column=0, columnspan=2, pady=10)
-
-        self.start_button = ttk.Button(button_frame, text="Takibi Başlat", command=self.start_monitoring)
-        self.start_button.grid(row=0, column=0, padx=5)
-
-        self.stop_button = ttk.Button(button_frame, text="Takibi Durdur", command=self.stop_monitoring,
-                                      state='disabled')
-        self.stop_button.grid(row=0, column=1, padx=5)
-
-        #status basladı var yok bekle
-        self.status_var = tk.StringVar(value="Durum: Bekleniyor")
-        status_label = ttk.Label(main_frame, textvariable=self.status_var)
-        status_label.grid(row=3, column=0, columnspan=2, pady=5)
-
-        #log kaydı icin
-        log_frame = ttk.LabelFrame(main_frame, text="İşlem Kayıtları", padding="10")
-        log_frame.grid(row=4, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=5)
-
-        self.log_text = tk.Text(log_frame, height=15, width=80)
-        self.log_text.grid(row=0, column=0, sticky=(tk.W, tk.E))
-
-        scrollbar = ttk.Scrollbar(log_frame, orient="vertical", command=self.log_text.yview)
-        scrollbar.grid(row=0, column=1, sticky=(tk.N, tk.S))
-        self.log_text.configure(yscrollcommand=scrollbar.set)
-
-    def load_model(self):
-        """Model ve vektörleştiriciyi yükler"""
+    def load_models(self):
+        """Load the ML models"""
         try:
-            model_path = "models/stock_availability_model.pkl"
-            vectorizer_path = "models/stock_vectorizer.pkl"
-
-            with open(model_path, "rb") as model_file:
+            with open(Config.MODEL_PATH, "rb") as model_file:
                 self.model = pickle.load(model_file)
-
-            with open(vectorizer_path, "rb") as vectorizer_file:
+            with open(Config.VECTORIZER_PATH, "rb") as vectorizer_file:
                 self.vectorizer = pickle.load(vectorizer_file)
         except Exception as e:
-            messagebox.showerror("Hata", f"Model yükleme hatası: {str(e)}")
-            self.root.destroy()
-
-    def send_email(self, subject, message):
-        """Email gönderme fonksiyonu"""
-        try:
-            msg = MIMEMultipart()
-            msg["From"] = self.sender_email.get()
-            msg["To"] = self.receiver_email.get()
-            msg["Subject"] = subject
-
-            msg.attach(MIMEText(message, "plain"))
-
-            with smtplib.SMTP("smtp.gmail.com", 587) as server:
-                server.starttls()
-                server.login(self.sender_email.get(), self.email_password.get())
-                server.send_message(msg)
-
-            self.log(f"Email gönderildi: {subject}")
-            return True
-        except Exception as e:
-            self.log(f"Email gönderimi başarısız: {str(e)}")
-            return False
+            logging.error(f"Error loading models: {str(e)}")
+            raise
 
     def get_html(self, url):
-        """URL'den HTML içeriğini çeker"""
+        """Fetch HTML content from URL"""
         try:
             service = Service(ChromeDriverManager().install())
-            driver = webdriver.Chrome(service=service) #eğer scraperden  html veri cekemezse burada sorun cıkarrrrr
+            driver = webdriver.Chrome(service=service)
             driver.get(url)
             html = driver.page_source
             driver.quit()
             return html
         except Exception as e:
-            self.log(f"HTML çekme hatası: {str(e)}")
+            logging.error(f"Error fetching HTML: {str(e)}")
             return None
 
-    def check_stock(self):
-        """Stok durumunu kontrol eder"""
-        url = self.url_entry.get().strip()
+    def check_stock(self, url):
+        """Check stock status for given URL"""
         html = self.get_html(url)
-
         if not html:
             return None
 
         soup = BeautifulSoup(html, "html.parser")
         elements = soup.find_all(True)
-
         stock_status = None
         max_confidence = 0
 
@@ -182,75 +99,108 @@ class StockCheckerApp:
 
         return stock_status
 
-    def log(self, message):
-        """Log mesajı ekler"""
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        self.log_text.insert("1.0", f"[{timestamp}] {message}\n")
-
-    def monitor_stock(self):
-        """Stok durumunu periyodik olarak kontrol eder"""
-        while self.monitoring:
+    def monitor_stock(self, url, notify_callback):
+        """Monitor stock status continuously"""
+        last_status = None
+        while self.monitoring_status.get(url, False):
             try:
-                current_status = self.check_stock()
-
+                current_status = self.check_stock(url)
                 if current_status is not None:
-                    status_text = "Stokta" if current_status == 1 else "Stokta Değil"
-                    self.log(f"Mevcut durum: {status_text}")
-
-                    if self.last_stock_status is not None and current_status != self.last_stock_status:
-                        if current_status == 1:
-                            subject = "Stok Durumu Değişti - STOKTA!"
-                            message = f"Ürün stoğa girdi!\nURL: {self.url_entry.get()}"
-                            self.send_email(subject, message)
-
-                    self.last_stock_status = current_status
-
-                interval = int(self.check_interval.get()) * 60
-                for i in range(interval, 0, -1):
-                    if not self.monitoring:
-                        break
-                    self.status_var.set(f"Durum: Sonraki kontrol {i} saniye sonra")
-                    time.sleep(1)
-
+                    if last_status is not None and current_status != last_status:
+                        notify_callback(url, current_status)
+                    last_status = current_status
+                time.sleep(Config.CHECK_INTERVAL)
             except Exception as e:
-                self.log(f"Hata oluştu: {str(e)}")
-                time.sleep(60)  # hata olustugunda 1 dakika bekle ve olana bak tekrar devam et
+                logging.error(f"Error in monitoring thread: {str(e)}")
+                time.sleep(60)  # Wait 1 minute before retrying
 
-    def start_monitoring(self):
-        """Takibi başlatır"""
-        if not all([
-            self.url_entry.get().strip(),
-            self.sender_email.get().strip(),
-            self.email_password.get().strip(),
-            self.receiver_email.get().strip()
-        ]):
-            messagebox.showwarning("Uyarı", "Lütfen tüm alanları doldurun!")
-            return
+    def start_monitoring(self, url, notify_callback):
+        """Start monitoring a URL"""
+        if url not in self.monitoring_threads or not self.monitoring_threads[url].is_alive():
+            self.monitoring_status[url] = True
+            thread = threading.Thread(
+                target=self.monitor_stock,
+                args=(url, notify_callback),
+                daemon=True
+            )
+            self.monitoring_threads[url] = thread
+            thread.start()
+            logging.info(f"Started monitoring: {url}")
 
-        self.monitoring = True
-        self.start_button.config(state='disabled')
-        self.stop_button.config(state='normal')
-        self.log("Stok takibi başlatıldı")
+    def stop_monitoring(self, url):
+        """Stop monitoring a URL"""
+        if url in self.monitoring_status:
+            self.monitoring_status[url] = False
+            logging.info(f"Stopped monitoring: {url}")
 
-        #bir thread oluşturur ve takibe başlıyor
-        self.monitor_thread = threading.Thread(target=self.monitor_stock)
-        self.monitor_thread.daemon = True
-        self.monitor_thread.start()
+# Notification handlers
+class NotificationHandler:
+    @staticmethod
+    def send_telegram_message(message):
+        """Send message via Telegram"""
+        url = f"https://api.telegram.org/bot{Config.TELEGRAM_BOT_TOKEN}/sendMessage"
+        payload = {
+            'chat_id': Config.TELEGRAM_CHAT_ID,
+            'text': message
+        }
+        try:
+            response = requests.post(url, data=payload)
+            return response.json()
+        except Exception as e:
+            logging.error(f"Error sending Telegram message: {str(e)}")
+            return None
 
-    def stop_monitoring(self):
-        """Takibi durdurur"""
-        self.monitoring = False
-        self.start_button.config(state='normal')
-        self.stop_button.config(state='disabled')
-        self.status_var.set("Durum: Durduruldu")
-        self.log("Stok takibi durduruldu")
+    @staticmethod
+    def generate_qr_code(data):
+        """Generate QR code for Telegram bot"""
+        qr = qrcode.QRCode(version=1, box_size=10, border=5)
+        qr.add_data(data)
+        qr.make(fit=True)
+        img = qr.make_image(fill='black', back_color='white')
+        buffered = BytesIO()
+        img.save(buffered, format="PNG")
+        return base64.b64encode(buffered.getvalue()).decode()
 
+# Initialize stock checker
+stock_checker = StockChecker()
 
-def main():
-    root = tk.Tk()
-    app = StockCheckerApp(root)
-    root.mainloop()
+# Route handlers
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    """Handle main page requests"""
+    if request.method == 'POST':
+        url = request.form.get('url')
+        if url:
+            stock_status = stock_checker.check_stock(url)
+            status_text = "Stokta" if stock_status == 1 else "Stokta Değil"
+            qr_code = NotificationHandler.generate_qr_code("https://t.me/your_telegram_bot")
+            return render_template('index.html', status=status_text, qr_code=qr_code, url=url)
+    return render_template('index.html')
 
+@app.route('/api/monitor', methods=['POST'])
+def start_monitoring():
+    """API endpoint to start monitoring"""
+    data = request.get_json()
+    url = data.get('url')
+    if url:
+        def notify_callback(url, status):
+            status_text = "Stokta" if status == 1 else "Stokta Değil"
+            message = f"Ürün stok durumu değişti: {status_text}\nURL: {url}"
+            NotificationHandler.send_telegram_message(message)
 
-if __name__ == "__main__":
-    main()
+        stock_checker.start_monitoring(url, notify_callback)
+        return jsonify({'status': 'success', 'message': 'Monitoring started'})
+    return jsonify({'status': 'error', 'message': 'URL required'}), 400
+
+@app.route('/api/stop-monitor', methods=['POST'])
+def stop_monitoring():
+    """API endpoint to stop monitoring"""
+    data = request.get_json()
+    url = data.get('url')
+    if url:
+        stock_checker.stop_monitoring(url)
+        return jsonify({'status': 'success', 'message': 'Monitoring stopped'})
+    return jsonify({'status': 'error', 'message': 'URL required'}), 400
+
+if __name__ == '__main__':
+    app.run(debug=True)
