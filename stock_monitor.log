@@ -1,0 +1,30 @@
+2025-01-04 20:44:07,407 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-04 20:44:07,409 INFO: [33mPress CTRL+C to quit[0m
+2025-01-04 20:44:07,411 INFO:  * Restarting with stat
+2025-01-04 20:44:09,797 WARNING:  * Debugger is active!
+2025-01-04 20:44:09,802 INFO:  * Debugger PIN: 785-944-511
+2025-01-04 20:45:17,707 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-04 20:45:17,708 INFO: [33mPress CTRL+C to quit[0m
+2025-01-04 20:45:17,710 INFO:  * Restarting with stat
+2025-01-04 20:45:20,225 WARNING:  * Debugger is active!
+2025-01-04 20:45:20,230 INFO:  * Debugger PIN: 785-944-511
+2025-01-04 20:50:01,153 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-04 20:50:01,153 INFO: [33mPress CTRL+C to quit[0m
+2025-01-04 20:50:01,155 INFO:  * Restarting with stat
+2025-01-04 20:50:03,907 WARNING:  * Debugger is active!
+2025-01-04 20:50:03,913 INFO:  * Debugger PIN: 785-944-511
+2025-01-04 20:50:35,202 INFO: 127.0.0.1 - - [04/Jan/2025 20:50:35] "GET / HTTP/1.1" 200 -
+2025-01-04 20:50:35,623 INFO: 127.0.0.1 - - [04/Jan/2025 20:50:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-04 20:50:40,802 INFO: 127.0.0.1 - - [04/Jan/2025 20:50:40] "GET /?url=https://www.zara.com/tr/tr/zw-koleksiyon-genis-kesim-kisa-elbise-p02065797.html?v1%3D417513242%26v2%3D2420896 HTTP/1.1" 200 -
+2025-01-04 20:50:51,660 INFO: 127.0.0.1 - - [04/Jan/2025 20:50:51] "GET /?url=https://www.zara.com/tr/tr/zw-koleksiyon-genis-kesim-kisa-elbise-p02065797.html?v1%3D417513242%26v2%3D2420896 HTTP/1.1" 200 -
+2025-01-04 20:54:50,781 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-04 20:54:50,782 INFO: [33mPress CTRL+C to quit[0m
+2025-01-04 20:54:50,784 INFO:  * Restarting with stat
+2025-01-04 20:54:53,231 WARNING:  * Debugger is active!
+2025-01-04 20:54:53,235 INFO:  * Debugger PIN: 785-944-511
+2025-01-04 20:54:55,428 INFO: 127.0.0.1 - - [04/Jan/2025 20:54:55] "GET /?url=https://www.zara.com/tr/tr/zw-koleksiyon-genis-kesim-kisa-elbise-p02065797.html?v1%3D417513242%26v2%3D2420896 HTTP/1.1" 200 -
+2025-01-04 20:55:31,196 INFO: 127.0.0.1 - - [04/Jan/2025 20:55:31] "GET /?url=https://www.pt.com.tr/ipad-109-inc-wifi-256gb-mavi-mpq93tua HTTP/1.1" 200 -
