@@ -18,17 +18,17 @@ monitoring = False
 last_stock_status = None
 
 # Telegram bot ayarları
-TELEGRAM_BOT_TOKEN = '7913485634:AAEwEGddqVxVvq-32qKFLTYueCZ1SL-KWpA'
-TELEGRAM_CHAT_ID = '7706289153'
+TELEGRAM_BOT_TOKEN = 'a'
+TELEGRAM_CHAT_ID = 'a'
 
-# Model ve vektörleştiriciyi yükle
+# Model ve vektörleştirici şey
 with open("models/stock_availability_model.pkl", "rb") as model_file:
     model = pickle.load(model_file)
 
 with open("models/stock_vectorizer.pkl", "rb") as vectorizer_file:
     vectorizer = pickle.load(vectorizer_file)
 
-# Telegram mesaj fonksiyonu
+# Telegram mesajı
 def send_telegram_message(message):
     try:
         url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
@@ -41,7 +41,7 @@ def send_telegram_message(message):
     except Exception as e:
         logging.error(f"Telegram mesajı gönderilirken hata oluştu: {e}")
 
-# Stok durumu kontrol fonksiyonu
+# Stok durumu kontrolü
 def check_stock(url):
     try:
         html = scraper.get_html(driver, url)

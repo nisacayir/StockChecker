@@ -25,7 +25,7 @@ session.mount("http://", adapter)
 session.mount("https://", adapter)
 
 
-# WebDriver'ı başlatma fonksiyonu
+# WebDriver kısmı
 def init_driver():
     """
     Selenium WebDriver başlatma fonksiyonu.
@@ -50,7 +50,7 @@ def init_driver():
         return None
 
 
-# HTML çekme fonksiyonu
+# HTML çekme
 def get_html(driver, url):
     """
     Belirtilen bir URL'den HTML içeriğini alır.
@@ -79,7 +79,7 @@ def get_html(driver, url):
         return None
 
 
-# HTML parse etme fonksiyonu
+# HTML parse
 def parse_html(html):
     """
     Alınan HTML içeriğini parse eder ve belirtilen elementleri döndürür.
@@ -99,7 +99,7 @@ def parse_html(html):
         return None
 
 
-# WebDriver'ı kapatma fonksiyonu
+# WebDriver'ı kapatma
 def close_driver(driver):
     """
     WebDriver'ı kapatır.
