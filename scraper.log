@@ -1,461 +1,64 @@
-2025-01-04 20:59:55,120 ====== WebDriver manager ======
-2025-01-04 20:59:56,951 Get LATEST chromedriver version for google-chrome
-2025-01-04 20:59:57,865 Get LATEST chromedriver version for google-chrome
-2025-01-04 20:59:58,765 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:00:00,944 WebDriver version 131.0.6778.204 selected
-2025-01-04 21:00:00,949 Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/win32/chromedriver-win32.zip
-2025-01-04 21:00:00,949 About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/win32/chromedriver-win32.zip
-2025-01-04 21:00:01,987 Driver downloading response is 200
-2025-01-04 21:00:03,043 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:05:09,023 ====== WebDriver manager ======
-2025-01-04 21:05:10,739 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:05:11,716 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:05:12,833 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:05:15,166 WebDriver version 131.0.6778.204 selected
-2025-01-04 21:05:15,169 Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/win32/chromedriver-win32.zip
-2025-01-04 21:05:15,169 About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/win32/chromedriver-win32.zip
-2025-01-04 21:05:43,771 ====== WebDriver manager ======
-2025-01-04 21:05:46,427 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:05:47,629 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:05:48,667 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:05:50,848 WebDriver version 131.0.6778.204 selected
-2025-01-04 21:05:50,858 Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/win32/chromedriver-win32.zip
-2025-01-04 21:05:50,858 About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/win32/chromedriver-win32.zip
-2025-01-04 21:05:52,171 Driver downloading response is 200
-2025-01-04 21:05:53,195 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:05:54,532 Driver has been saved in cache [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204]
-2025-01-04 21:05:57,367 WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-04 21:06:00,361 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-01-10 12:08:08,217 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2025-01-04 21:06:00,362 [33mPress CTRL+C to quit[0m
-2025-01-04 21:06:00,368  * Restarting with stat
-2025-01-04 21:06:03,445 ====== WebDriver manager ======
-2025-01-04 21:06:05,989 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:06:08,375 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:06:10,733 Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204\chromedriver-win32/chromedriver.exe] found in cache
-2025-01-04 21:06:14,424 WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-04 21:06:17,948  * Debugger is active!
-2025-01-04 21:06:17,965  * Debugger PIN: 785-944-511
-2025-01-04 21:06:22,412 WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-04 21:06:22,413 127.0.0.1 - - [04/Jan/2025 21:06:22] "GET /?url=https://www.pt.com.tr/ipad-109-inc-wifi-256gb-mavi-mpq93tua HTTP/1.1" 200 -
-2025-01-04 21:06:31,211 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000219231885C0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/1ccdcbc348c63cebb38de0f00e2fac5a
-2025-01-04 21:06:35,264 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021923427200>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/1ccdcbc348c63cebb38de0f00e2fac5a
-2025-01-04 21:06:39,361 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021923427260>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/1ccdcbc348c63cebb38de0f00e2fac5a
-2025-01-04 21:06:47,518 WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-04 21:06:47,518 127.0.0.1 - - [04/Jan/2025 21:06:47] "GET / HTTP/1.1" 200 -
-2025-01-04 21:16:14,098 ====== WebDriver manager ======
-2025-01-04 21:16:16,254 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:16:17,390 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:16:18,293 Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204\chromedriver-win32/chromedriver.exe] found in cache
-2025-01-04 21:16:20,381 WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-04 21:16:22,235 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-01-04 21:16:22,235 [33mPress CTRL+C to quit[0m
-2025-01-04 21:16:22,238  * Restarting with stat
-2025-01-04 21:16:24,332 ====== WebDriver manager ======
-2025-01-04 21:16:27,751 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:16:28,712 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:16:29,741 Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204\chromedriver-win32/chromedriver.exe] found in cache
-2025-01-04 21:16:33,955 WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-04 21:16:40,548  * Debugger is active!
-2025-01-04 21:16:40,573  * Debugger PIN: 785-944-511
-2025-01-04 21:17:37,800 WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-04 21:17:37,800 127.0.0.1 - - [04/Jan/2025 21:17:37] "GET / HTTP/1.1" 200 -
-2025-01-04 21:18:09,481 Stok takibi baï¿½latï¿½ldï¿½.
-2025-01-04 21:18:13,574 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374E3680>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81/url
-2025-01-04 21:18:13,574 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374E3A10>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81
-2025-01-04 21:18:17,666 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374E3D40>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81
-2025-01-04 21:18:17,667 Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-04 21:18:17,668 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374E3DD0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81/url
-2025-01-04 21:18:21,757 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374E3C50>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81/url
-2025-01-04 21:18:21,757 Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-04 21:18:21,758 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374E3FE0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81
-2025-01-04 21:18:25,855 Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-04 21:18:25,855 Hata oluï¿½tu: HTTPConnectionPool(host='localhost', port=60074): Max retries exceeded with url: /session/f50dde436858e79e5d826a694dda9a81/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374E80B0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')) - URL: https://www.pt.com.tr/ipad-109-inc-wifi-256gb-mavi-mpq93tua
-2025-01-04 21:18:29,898 WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-04 21:18:29,898 127.0.0.1 - - [04/Jan/2025 21:18:29] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-04 21:18:33,992 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374E8110>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81
-2025-01-04 21:18:38,097 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374E8F80>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81
-2025-01-04 21:18:42,171 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374E8EC0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81
-2025-01-04 21:18:50,387 WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-04 21:18:50,388 127.0.0.1 - - [04/Jan/2025 21:18:50] "GET / HTTP/1.1" 200 -
-2025-01-04 21:28:29,922 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374E9670>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81/url
-2025-01-04 21:28:34,014 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374E9490>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81/url
-2025-01-04 21:28:38,121 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374E97C0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81/url
-2025-01-04 21:28:42,183 Hata oluï¿½tu: HTTPConnectionPool(host='localhost', port=60074): Max retries exceeded with url: /session/f50dde436858e79e5d826a694dda9a81/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374EA1B0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')) - URL: https://www.pt.com.tr/ipad-109-inc-wifi-256gb-mavi-mpq93tua
-2025-01-04 21:29:29,658 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374E3890>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81
-2025-01-04 21:29:33,736 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374EA240>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81
-2025-01-04 21:29:37,795 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EB374EA1B0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/f50dde436858e79e5d826a694dda9a81
-2025-01-04 21:30:13,187 ====== WebDriver manager ======
-2025-01-04 21:30:14,903 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:30:15,917 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:30:16,838 Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204\chromedriver-win32/chromedriver.exe] found in cache
-2025-01-04 21:30:19,102 WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-04 21:30:21,793 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-01-04 21:30:21,793 [33mPress CTRL+C to quit[0m
-2025-01-04 21:30:21,801  * Restarting with stat
-2025-01-04 21:30:26,157 ====== WebDriver manager ======
-2025-01-04 21:30:29,750 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:30:31,864 Get LATEST chromedriver version for google-chrome
-2025-01-04 21:30:33,230 Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204\chromedriver-win32/chromedriver.exe] found in cache
-2025-01-04 21:30:37,030 WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-04 21:30:42,945  * Debugger is active!
-2025-01-04 21:30:42,977  * Debugger PIN: 785-944-511
-2025-01-04 21:32:30,687 WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-04 21:32:30,688 127.0.0.1 - - [04/Jan/2025 21:32:30] "GET / HTTP/1.1" 200 -
-2025-01-04 21:32:34,940 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000283F673B890>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/156ac9ecab3b9b8d3265b89b3f5aa000
-2025-01-04 21:32:37,993 Stok takibi baï¿½latï¿½ldï¿½.
-2025-01-04 21:32:39,039 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000283F673B6E0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/156ac9ecab3b9b8d3265b89b3f5aa000
-2025-01-04 21:32:42,087 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000283F67CA3C0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/156ac9ecab3b9b8d3265b89b3f5aa000/url
-2025-01-04 21:32:42,087 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000283F67CA6C0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/156ac9ecab3b9b8d3265b89b3f5aa000
-2025-01-04 21:32:43,144 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000283F673BE60>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/156ac9ecab3b9b8d3265b89b3f5aa000
-2025-01-04 21:32:46,171 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000283F67CABA0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/156ac9ecab3b9b8d3265b89b3f5aa000
-2025-01-04 21:32:46,172 Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-04 21:32:46,172 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000283F67CA780>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/156ac9ecab3b9b8d3265b89b3f5aa000/url
-2025-01-04 21:32:50,283 Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-04 21:32:50,283 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000283F67CAE10>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/156ac9ecab3b9b8d3265b89b3f5aa000/url
-2025-01-04 21:32:50,284 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000283F67CB3B0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/156ac9ecab3b9b8d3265b89b3f5aa000
-2025-01-04 21:32:51,329 WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-04 21:32:51,329 127.0.0.1 - - [04/Jan/2025 21:32:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-01-04 21:32:54,363 Hata oluï¿½tu: HTTPConnectionPool(host='localhost', port=60343): Max retries exceeded with url: /session/156ac9ecab3b9b8d3265b89b3f5aa000/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000283F67CB260>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')) - URL: https://www.pt.com.tr/ipad-109-inc-wifi-256gb-mavi-mpq93tua
-2025-01-04 21:32:54,363 Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-04 21:32:58,452 WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-04 21:32:58,452 127.0.0.1 - - [04/Jan/2025 21:32:58] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-04 21:33:02,519 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000283F67CB890>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/156ac9ecab3b9b8d3265b89b3f5aa000
-2025-01-04 21:33:06,607 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000283F67CB5C0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/156ac9ecab3b9b8d3265b89b3f5aa000
-2025-01-04 21:33:10,705 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000283F67CBFE0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/156ac9ecab3b9b8d3265b89b3f5aa000
-2025-01-04 21:33:18,862 WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-04 21:33:18,862 127.0.0.1 - - [04/Jan/2025 21:33:18] "GET / HTTP/1.1" 200 -
-2025-01-04 21:41:10,590 - INFO - ====== WebDriver manager ======
-2025-01-04 21:41:13,369 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-04 21:41:14,503 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-04 21:41:15,460 - INFO - Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204\chromedriver-win32/chromedriver.exe] found in cache
-2025-01-04 21:41:17,802 - INFO - WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-04 21:41:18,524 - INFO - URL'ye eriï¿½iliyor: https://example.com
-2025-01-04 21:41:18,580 - INFO - HTML baï¿½arï¿½yla ï¿½ekildi: https://example.com
-2025-01-04 21:41:18,582 - INFO - HTML baï¿½arï¿½yla parse edildi.
-2025-01-04 21:41:36,648 - INFO - ====== WebDriver manager ======
-2025-01-04 21:41:38,351 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-04 21:41:39,313 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-04 21:41:40,229 - INFO - Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204\chromedriver-win32/chromedriver.exe] found in cache
-2025-01-04 21:41:42,253 - INFO - WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-04 21:41:46,490 - INFO - URL'ye eriï¿½iliyor: https://www.pt.com.tr/ipad-109-inc-wifi-256gb-mavi-mpq93tua
-2025-01-04 21:41:46,575 - INFO - HTML baï¿½arï¿½yla ï¿½ekildi: https://www.pt.com.tr/ipad-109-inc-wifi-256gb-mavi-mpq93tua
-2025-01-04 21:41:46,727 - INFO - HTML baï¿½arï¿½yla parse edildi.
-2025-01-04 21:41:49,538 - INFO - WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-04 21:42:24,949 - INFO - ====== WebDriver manager ======
-2025-01-04 21:42:26,846 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-04 21:42:28,051 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-04 21:42:29,106 - INFO - Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204\chromedriver-win32/chromedriver.exe] found in cache
-2025-01-04 21:42:31,441 - INFO - WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-04 21:42:33,751 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-01-04 21:42:33,751 - INFO - [33mPress CTRL+C to quit[0m
-2025-01-04 21:42:33,755 - INFO -  * Restarting with stat
-2025-01-04 21:42:35,835 - INFO - ====== WebDriver manager ======
-2025-01-04 21:42:39,613 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-04 21:42:41,326 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-04 21:42:43,089 - INFO - Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204\chromedriver-win32/chromedriver.exe] found in cache
-2025-01-04 21:42:46,941 - INFO - WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-04 21:42:57,640 - WARNING -  * Debugger is active!
-2025-01-04 21:42:57,662 - INFO -  * Debugger PIN: 785-944-511
-2025-01-04 21:43:03,113 - INFO - WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-04 21:43:03,113 - INFO - 127.0.0.1 - - [04/Jan/2025 21:43:03] "GET / HTTP/1.1" 200 -
-2025-01-04 21:43:07,340 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D8956A0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9
-2025-01-04 21:43:08,529 - INFO - Stok takibi baï¿½latï¿½ldï¿½.
-2025-01-04 21:43:11,447 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D895880>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9
-2025-01-04 21:43:12,630 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D8D8470>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9/url
-2025-01-04 21:43:12,630 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-04 21:43:12,631 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D8D8770>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9
-2025-01-04 21:43:15,536 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D895DF0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9
-2025-01-04 21:43:16,719 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D8D8C80>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9
-2025-01-04 21:43:16,719 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D8D8B90>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9/url
-2025-01-04 21:43:20,809 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-04 21:43:20,809 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-04 21:43:20,809 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D8D9040>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9/url
-2025-01-04 21:43:20,809 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D8D93D0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9
-2025-01-04 21:43:23,713 - INFO - WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-04 21:43:23,713 - INFO - 127.0.0.1 - - [04/Jan/2025 21:43:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-01-04 21:43:24,899 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-04 21:43:24,899 - ERROR - Beklenmeyen bir hata oluï¿½tu: HTTPConnectionPool(host='localhost', port=60908): Max retries exceeded with url: /session/e3d34dcaedba32e96546874d549876d9/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D8D8D10>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½'))
-2025-01-04 21:43:28,976 - INFO - WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-04 21:43:28,976 - INFO - 127.0.0.1 - - [04/Jan/2025 21:43:28] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-04 21:43:33,066 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D8D8EC0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9
-2025-01-04 21:43:37,173 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D8DA2A0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9
-2025-01-04 21:43:41,236 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D8DA8A0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9
-2025-01-04 21:43:49,388 - INFO - WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-04 21:43:49,388 - INFO - 127.0.0.1 - - [04/Jan/2025 21:43:49] "GET / HTTP/1.1" 200 -
-2025-01-04 21:53:28,957 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D896030>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9/url
-2025-01-04 21:53:33,036 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D8D88F0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9/url
-2025-01-04 21:53:37,119 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D8D8530>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/e3d34dcaedba32e96546874d549876d9/url
-2025-01-04 21:53:41,207 - ERROR - Beklenmeyen bir hata oluï¿½tu: HTTPConnectionPool(host='localhost', port=60908): Max retries exceeded with url: /session/e3d34dcaedba32e96546874d549876d9/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027D2D8D8C50>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½'))
-2025-01-05 16:38:30,097 - INFO - ====== WebDriver manager ======
-2025-01-05 16:38:33,359 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 16:38:34,670 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 16:38:36,054 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 16:38:38,708 - INFO - WebDriver version 131.0.6778.204 selected
-2025-01-05 16:38:38,711 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/win32/chromedriver-win32.zip
-2025-01-05 16:38:38,712 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/win32/chromedriver-win32.zip
-2025-01-05 16:38:39,941 - INFO - Driver downloading response is 200
-2025-01-05 16:38:44,756 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 16:38:46,454 - INFO - Driver has been saved in cache [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204]
-2025-01-05 16:38:49,021 - INFO - WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-05 16:38:57,960 - INFO - URL'ye eriï¿½iliyor: https://www.gratis.com/oje/beaulis-paint-it-oje-811-endless-sky-p-10120692
-2025-01-05 16:38:58,055 - INFO - HTML baï¿½arï¿½yla ï¿½ekildi: https://www.gratis.com/oje/beaulis-paint-it-oje-811-endless-sky-p-10120692
-2025-01-05 16:38:58,321 - INFO - HTML baï¿½arï¿½yla parse edildi.
-2025-01-05 16:39:02,487 - INFO - WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-05 16:57:08,107 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-01-05 16:57:08,108 - INFO - [33mPress CTRL+C to quit[0m
-2025-01-05 16:57:08,111 - INFO -  * Restarting with stat
-2025-01-05 16:57:11,372 - WARNING -  * Debugger is active!
-2025-01-05 16:57:11,383 - INFO -  * Debugger PIN: 785-944-511
-2025-01-05 16:57:33,178 - INFO - 127.0.0.1 - - [05/Jan/2025 16:57:33] "GET / HTTP/1.1" 200 -
-2025-01-05 16:57:33,343 - INFO - 127.0.0.1 - - [05/Jan/2025 16:57:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-01-05 16:57:36,781 - INFO - ====== WebDriver manager ======
-2025-01-05 16:57:38,321 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 16:57:39,521 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 16:57:40,697 - INFO - Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204\chromedriver-win32/chromedriver.exe] found in cache
-2025-01-05 16:57:42,975 - INFO - WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-05 16:57:42,978 - INFO - WebDriver kapatï¿½lï¿½yor...
-2025-01-05 16:57:43,324 - INFO - URL'ye eriï¿½iliyor: https://www.zara.com/tr/tr/zw-koleksiyon-genis-kesim-kisa-elbise-p02065797.html?v1=417513242&v2=2420896
-2025-01-05 16:57:44,695 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-05 16:57:44,697 - ERROR - WebDriver ile ilgili bir hata oluï¿½tu: Message: invalid session id
-Stacktrace:
-	GetHandleVerifier [0x00E9EC13+23731]
-	(No symbol) [0x00E2C394]
-	(No symbol) [0x00D0BCD9]
-	(No symbol) [0x00D43CD6]
-	(No symbol) [0x00D44EBD]
-	GetHandleVerifier [0x0117F0D3+3039603]
-	GetHandleVerifier [0x01192DEA+3120778]
-	GetHandleVerifier [0x0118B592+3089970]
-	GetHandleVerifier [0x00F343B0+635984]
-	(No symbol) [0x00E34DCD]
-	(No symbol) [0x00E32068]
-	(No symbol) [0x00E32205]
-	(No symbol) [0x00E24FD0]
-	BaseThreadInitThunk [0x753C7BA9+25]
-	RtlInitializeExceptionChain [0x76EBC0CB+107]
-	RtlClearBits [0x76EBC04F+191]
+2025-01-10 12:08:08,218 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-10 12:08:08,220 - INFO -  * Restarting with stat
+2025-01-10 12:08:09,823 - WARNING -  * Debugger is active!
+2025-01-10 12:08:09,827 - INFO -  * Debugger PIN: 785-944-511
 
-2025-01-05 16:57:46,714 - INFO - WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-05 16:57:50,776 - INFO - 127.0.0.1 - - [05/Jan/2025 16:57:50] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-05 16:57:50,787 - INFO - 127.0.0.1 - - [05/Jan/2025 16:57:50] "GET / HTTP/1.1" 200 -
-2025-01-05 17:08:24,356 - INFO - ====== WebDriver manager ======
-2025-01-05 17:08:25,959 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 17:08:27,182 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 17:08:28,414 - INFO - Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204\chromedriver-win32/chromedriver.exe] found in cache
-2025-01-05 17:08:30,566 - INFO - WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-05 17:08:30,566 - INFO - URL'ye gidiliyor: https://www.zara.com/tr/tr/zw-koleksiyon-genis-kesim-kisa-elbise-p02065797.html
-2025-01-05 17:08:30,882 - INFO - Sayfanï¿½n yï¿½klenmesi bekleniyor...
-2025-01-05 17:08:30,923 - INFO - HTML baï¿½arï¿½yla ï¿½ekildi: https://www.zara.com/tr/tr/zw-koleksiyon-genis-kesim-kisa-elbise-p02065797.html
-2025-01-05 17:08:30,924 - INFO - HTML baï¿½arï¿½yla parse edildi.
-2025-01-05 17:08:30,924 - INFO - WebDriver kapatï¿½lï¿½yor...
-2025-01-05 17:08:33,658 - INFO - WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-05 17:15:01,563 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-01-05 17:15:01,563 - INFO - [33mPress CTRL+C to quit[0m
-2025-01-05 17:15:01,565 - INFO -  * Restarting with stat
-2025-01-05 17:15:04,590 - WARNING -  * Debugger is active!
-2025-01-05 17:15:04,596 - INFO -  * Debugger PIN: 785-944-511
-2025-01-05 17:15:22,131 - INFO - 127.0.0.1 - - [05/Jan/2025 17:15:22] "GET / HTTP/1.1" 200 -
-2025-01-05 17:15:22,395 - INFO - 127.0.0.1 - - [05/Jan/2025 17:15:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-01-05 17:15:35,825 - INFO - ====== WebDriver manager ======
-2025-01-05 17:15:37,395 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 17:15:38,865 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 17:15:40,131 - INFO - Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204\chromedriver-win32/chromedriver.exe] found in cache
-2025-01-05 17:15:42,614 - INFO - WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-05 17:15:42,617 - INFO - WebDriver kapatï¿½lï¿½yor...
-2025-01-05 17:15:52,597 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-05 17:15:55,619 - INFO - WebDriver baï¿½arï¿½yla kapatï¿½ldï¿½.
-2025-01-05 17:15:55,619 - INFO - 127.0.0.1 - - [05/Jan/2025 17:15:55] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-05 17:15:55,623 - INFO - 127.0.0.1 - - [05/Jan/2025 17:15:55] "GET / HTTP/1.1" 200 -
-2025-01-05 17:16:01,612 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E3CBFEC0B0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/1d8ee986bb5551be66688f66b05b5efc/element
-2025-01-05 17:16:05,708 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E3CBFEC440>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/1d8ee986bb5551be66688f66b05b5efc/element
-2025-01-05 17:16:09,787 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E3CC003800>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½')': /session/1d8ee986bb5551be66688f66b05b5efc/element
-2025-01-05 17:16:13,877 - ERROR - Beklenmeyen bir hata oluï¿½tu: HTTPConnectionPool(host='localhost', port=49786): Max retries exceeded with url: /session/1d8ee986bb5551be66688f66b05b5efc/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001E3CC0037A0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiï¿½inden baï¿½lantï¿½ kurulamadï¿½'))
-2025-01-05 17:21:08,006 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-01-05 17:21:08,006 - INFO - [33mPress CTRL+C to quit[0m
-2025-01-05 17:21:08,008 - INFO -  * Restarting with stat
-2025-01-05 17:21:11,189 - WARNING -  * Debugger is active!
-2025-01-05 17:21:11,195 - INFO -  * Debugger PIN: 785-944-511
-2025-01-05 17:22:05,549 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-01-05 17:22:05,550 - INFO - [33mPress CTRL+C to quit[0m
-2025-01-05 17:22:05,553 - INFO -  * Restarting with stat
-2025-01-05 17:22:08,669 - WARNING -  * Debugger is active!
-2025-01-05 17:22:08,681 - INFO -  * Debugger PIN: 785-944-511
-2025-01-05 17:22:24,574 - INFO - 127.0.0.1 - - [05/Jan/2025 17:22:24] "GET / HTTP/1.1" 200 -
-2025-01-05 17:22:24,737 - INFO - 127.0.0.1 - - [05/Jan/2025 17:22:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2025-01-05 17:22:29,521 - INFO - ====== WebDriver manager ======
-2025-01-05 17:22:31,117 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 17:22:32,360 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 17:22:33,733 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 17:22:36,729 - INFO - WebDriver version 131.0.6778.204 selected
-2025-01-05 17:22:36,736 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/win32/chromedriver-win32.zip
-2025-01-05 17:22:36,736 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/win32/chromedriver-win32.zip
-2025-01-05 17:22:37,932 - INFO - Driver downloading response is 200
-2025-01-05 17:22:42,665 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 17:22:44,175 - INFO - Driver has been saved in cache [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204]
-2025-01-05 17:22:48,502 - INFO - WebDriver baï¿½arï¿½yla baï¿½latï¿½ldï¿½.
-2025-01-05 17:22:48,508 - INFO - WebDriver kapatï¿½lï¿½yor...
-2025-01-05 17:22:57,813 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 12025-01-05 17:42:48,831 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-01-05 17:42:48,831 - INFO - [33mPress CTRL+C to quit[0m
-2025-01-05 17:42:48,834 - INFO -  * Restarting with stat
-2025-01-05 17:42:51,806 - WARNING -  * Debugger is active!
-2025-01-05 17:42:51,812 - INFO -  * Debugger PIN: 785-944-511
-2025-01-05 17:45:05,598 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-01-05 17:45:05,598 - INFO - [33mPress CTRL+C to quit[0m
-2025-01-05 17:45:05,601 - INFO -  * Restarting with stat
-2025-01-05 17:45:10,549 - WARNING -  * Debugger is active!
-2025-01-05 17:45:10,558 - INFO -  * Debugger PIN: 785-944-511
-2025-01-05 17:45:16,286 - INFO - 127.0.0.1 - - [05/Jan/2025 17:45:16] "GET / HTTP/1.1" 200 -
-2025-01-05 17:45:19,853 - INFO - ====== WebDriver manager ======
-2025-01-05 17:45:21,758 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 17:45:21,771 - ERROR - WebDriver baþlatýlýrken hata oluþtu: Could not reach host. Are you offline?
-2025-01-05 17:45:21,772 - ERROR - Beklenmeyen bir hata oluþtu: 'NoneType' object has no attribute 'get'
-2025-01-05 17:45:21,774 - INFO - 127.0.0.1 - - [05/Jan/2025 17:45:21] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-05 17:45:21,784 - INFO - 127.0.0.1 - - [05/Jan/2025 17:45:21] "GET / HTTP/1.1" 200 -
-2025-01-05 17:56:22,048 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-01-05 17:56:22,048 - INFO - [33mPress CTRL+C to quit[0m
-2025-01-05 17:56:22,051 - INFO -  * Restarting with stat
-2025-01-05 17:56:24,658 - WARNING -  * Debugger is active!
-2025-01-05 17:56:24,663 - INFO -  * Debugger PIN: 785-944-511
-2025-01-05 17:57:12,370 - INFO -  * Detected change in 'C:\\Users\\LENOVO\\PycharmProjects\\checker_ml\\scraper.py', reloading
-2025-01-05 17:57:12,689 - INFO -  * Restarting with stat
-2025-01-05 17:57:16,755 - WARNING -  * Debugger is active!
-2025-01-05 17:57:16,765 - INFO -  * Debugger PIN: 785-944-511
-2025-01-05 17:59:50,708 - INFO -  * Detected change in 'C:\\Users\\LENOVO\\PycharmProjects\\checker_ml\\scraper.py', reloading
-2025-01-05 17:59:50,934 - INFO -  * Restarting with stat
-2025-01-05 17:59:56,597 - WARNING -  * Debugger is active!
-2025-01-05 17:59:56,604 - INFO -  * Debugger PIN: 785-944-511
-2025-01-05 18:01:03,072 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-01-05 18:01:03,072 - INFO - [33mPress CTRL+C to quit[0m
-2025-01-05 18:01:03,074 - INFO -  * Restarting with stat
-2025-01-05 18:01:05,673 - WARNING -  * Debugger is active!
-2025-01-05 18:01:05,681 - INFO -  * Debugger PIN: 785-944-511
-2025-01-05 18:01:23,138 - INFO - 127.0.0.1 - - [05/Jan/2025 18:01:23] "GET / HTTP/1.1" 200 -
-2025-01-05 18:01:26,660 - ERROR - WebDriver baþlatýlýrken hata oluþtu: ChromeDriverManager.__init__() got an unexpected keyword argument 'cache_valid_range'
-2025-01-05 18:01:26,660 - ERROR - Beklenmeyen bir hata oluþtu: 'NoneType' object has no attribute 'get'
-2025-01-05 18:01:26,661 - INFO - 127.0.0.1 - - [05/Jan/2025 18:01:26] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-05 18:01:26,667 - INFO - 127.0.0.1 - - [05/Jan/2025 18:01:26] "GET / HTTP/1.1" 200 -
-2025-01-05 18:03:06,478 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-01-05 18:03:06,478 - INFO - [33mPress CTRL+C to quit[0m
-2025-01-05 18:03:06,480 - INFO -  * Restarting with stat
-2025-01-05 18:03:09,301 - WARNING -  * Debugger is active!
-2025-01-05 18:03:09,308 - INFO -  * Debugger PIN: 785-944-511
-2025-01-05 18:03:10,471 - INFO - 127.0.0.1 - - [05/Jan/2025 18:03:10] "GET / HTTP/1.1" 200 -
-2025-01-05 18:03:12,564 - INFO - ====== WebDriver manager ======
-2025-01-05 18:03:15,196 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 18:03:16,706 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 18:03:18,165 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 18:03:21,037 - INFO - WebDriver version 131.0.6778.204 selected
-2025-01-05 18:03:21,044 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/win32/chromedriver-win32.zip
-2025-01-05 18:03:21,044 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/win32/chromedriver-win32.zip
-2025-01-05 18:03:22,519 - INFO - Driver downloading response is 200
-2025-01-05 18:03:36,848 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 18:03:38,566 - INFO - Driver has been saved in cache [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204]
-2025-01-05 18:03:43,100 - INFO - WebDriver baþarýyla baþlatýldý.
-2025-01-05 18:03:43,206 - INFO - WebDriver kapatýlýyor...
-2025-01-05 18:03:51,891 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-05 18:03:55,634 - INFO - WebDriver baþarýyla kapatýldý.
-2025-01-05 18:03:55,636 - INFO - 127.0.0.1 - - [05/Jan/2025 18:03:55] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-05 18:03:55,651 - INFO - 127.0.0.1 - - [05/Jan/2025 18:03:55] "GET / HTTP/1.1" 200 -
-2025-01-05 18:04:00,741 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BA39CDF200>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý')': /session/08a7b9dba144765a904df67e6d0e600e/element
-2025-01-05 18:04:04,812 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001BA39CC0740>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý')': /session/08a7b9dba144765a904df67e6d0e600e/element
-2025-01-05 18:09:23,942 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-01-05 18:09:23,943 - INFO - [33mPress CTRL+C to quit[0m
-2025-01-05 18:09:23,944 - INFO -  * Restarting with stat
-2025-01-05 18:09:27,441 - WARNING -  * Debugger is active!
-2025-01-05 18:09:27,451 - INFO -  * Debugger PIN: 785-944-511
-2025-01-05 18:09:31,476 - INFO - 127.0.0.1 - - [05/Jan/2025 18:09:31] "GET / HTTP/1.1" 200 -
-2025-01-05 18:09:34,605 - INFO - ====== WebDriver manager ======
-2025-01-05 18:09:36,190 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 18:09:37,509 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 18:09:38,737 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 18:09:41,537 - INFO - WebDriver version 131.0.6778.204 selected
-2025-01-05 18:09:41,543 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/win32/chromedriver-win32.zip
-2025-01-05 18:09:41,543 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/win32/chromedriver-win32.zip
-2025-01-05 18:09:42,776 - INFO - Driver downloading response is 200
-2025-01-05 18:10:16,823 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 18:10:18,353 - INFO - Driver has been saved in cache [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204]
-2025-01-05 18:10:21,883 - INFO - WebDriver baþarýyla baþlatýldý.
-2025-01-05 18:10:21,892 - INFO - WebDriver kapatýlýyor...
-2025-01-05 18:10:29,672 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-05 18:10:32,794 - INFO - WebDriver baþarýyla kapatýldý.
-2025-01-05 18:10:32,795 - INFO - 127.0.0.1 - - [05/Jan/2025 18:10:32] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-05 18:10:32,799 - INFO - 127.0.0.1 - - [05/Jan/2025 18:10:32] "GET / HTTP/1.1" 200 -
-2025-01-05 18:10:38,602 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027CDEBAEF30>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý')': /session/be1e699badec9a48147bfe69d7cfade6/element
-2025-01-05 18:10:42,703 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027CDEBAFCE0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý')': /session/be1e699badec9a48147bfe69d7cfade6/element
-2025-01-05 18:10:46,782 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027CDEBAF620>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý')': /session/be1e699badec9a48147bfe69d7cfade6/element
-2025-01-05 18:10:50,882 - ERROR - Beklenmeyen bir hata oluþtu: HTTPConnectionPool(host='localhost', port=57519): Max retries exceeded with url: /session/be1e699badec9a48147bfe69d7cfade6/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000027CDEBB0470>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý'))
-2025-01-05 18:12:13,056 - INFO - 127.0.0.1 - - [05/Jan/2025 18:12:13] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-05 18:12:13,061 - INFO - 127.0.0.1 - - [05/Jan/2025 18:12:13] "GET / HTTP/1.1" 200 -
-2025-01-05 18:16:21,916 - INFO - 127.0.0.1 - - [05/Jan/2025 18:16:21] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-05 18:16:21,920 - INFO - 127.0.0.1 - - [05/Jan/2025 18:16:21] "GET / HTTP/1.1" 200 -
-2025-01-05 18:16:31,053 - INFO - 127.0.0.1 - - [05/Jan/2025 18:16:31] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-05 18:16:31,059 - INFO - 127.0.0.1 - - [05/Jan/2025 18:16:31] "GET / HTTP/1.1" 200 -
-2025-01-05 18:16:33,092 - INFO - 127.0.0.1 - - [05/Jan/2025 18:16:33] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-05 18:16:33,096 - INFO - 127.0.0.1 - - [05/Jan/2025 18:16:33] "GET / HTTP/1.1" 200 -
-2025-01-05 18:20:50,883 - ERROR - Driver baþlatýlamadý. HTML alýnamadý.
-2025-01-05 19:12:40,323 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-01-05 19:12:40,323 - INFO - [33mPress CTRL+C to quit[0m
-2025-01-05 19:12:40,327 - INFO -  * Restarting with stat
-2025-01-05 19:12:43,134 - WARNING -  * Debugger is active!
-2025-01-05 19:12:43,139 - INFO -  * Debugger PIN: 785-944-511
-2025-01-05 19:12:53,257 - INFO - 127.0.0.1 - - [05/Jan/2025 19:12:53] "GET / HTTP/1.1" 200 -
-2025-01-05 19:12:58,881 - INFO - ====== WebDriver manager ======
-2025-01-05 19:13:00,633 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 19:13:00,637 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
-2025-01-05 19:13:02,027 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 9030
-2025-01-05 19:13:02,046 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-05 19:13:02,047 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
-2025-01-05 19:13:03,178 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 9030
-2025-01-05 19:13:03,184 - INFO - Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204\chromedriver-win32/chromedriver.exe] found in cache
-2025-01-05 19:13:03,192 - DEBUG - Started executable: `C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.204\chromedriver-win32\chromedriver.exe` in a child process with pid: 11920
-2025-01-05 19:13:03,707 - DEBUG - POST http://localhost:60777/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--disable-gpu", "--no-sandbox", "--window-size=1920,1080", "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"]}}}}
-2025-01-05 19:13:03,708 - DEBUG - Starting new HTTP connection (1): localhost:60777
-2025-01-05 19:13:05,502 - DEBUG - http://localhost:60777 "POST /session HTTP/1.1" 200 0
-2025-01-05 19:13:05,502 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.205","chrome":{"chromedriverVersion":"131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7})","userDataDir":"C:\\Users\\LENOVO\\AppData\\Local\\Temp\\scoped_dir11920_1032215832"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:60780"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"048b7600335a83ce170c431cc2d57105"}} | headers=HTTPHeaderDict({'Content-Length': '886', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2025-01-05 19:13:05,502 - DEBUG - Finished Request
-2025-01-05 19:13:05,503 - INFO - WebDriver baþarýyla baþlatýldý.
-2025-01-05 19:13:05,504 - DEBUG - POST http://localhost:60777/session/048b7600335a83ce170c431cc2d57105/url {"url": "https://www.gratis.com/oje/beaulis-paint-it-oje-811-endless-sky-p-10120692"}
-2025-01-05 19:13:05,505 - INFO - WebDriver kapatýlýyor...
-2025-01-05 19:13:05,506 - DEBUG - DELETE http://localhost:60777/session/048b7600335a83ce170c431cc2d57105 {}
-2025-01-05 19:13:05,506 - DEBUG - Starting new HTTP connection (2): localhost:60777
-2025-01-05 19:13:25,186 - DEBUG - http://localhost:60777 "POST /session/048b7600335a83ce170c431cc2d57105/url HTTP/1.1" 200 0
-2025-01-05 19:13:25,187 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2025-01-05 19:13:25,188 - DEBUG - Finished Request
-2025-01-05 19:13:25,407 - DEBUG - http://localhost:60777 "DELETE /session/048b7600335a83ce170c431cc2d57105 HTTP/1.1" 200 0
-2025-01-05 19:13:25,408 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-05 19:13:25,408 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2025-01-05 19:13:25,409 - DEBUG - Finished Request
-2025-01-05 19:13:28,956 - INFO - WebDriver baþarýyla kapatýldý.
-2025-01-05 19:13:28,958 - INFO - 127.0.0.1 - - [05/Jan/2025 19:13:28] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-05 19:13:28,970 - INFO - 127.0.0.1 - - [05/Jan/2025 19:13:28] "GET / HTTP/1.1" 200 -
-2025-01-05 19:13:30,189 - DEBUG - POST http://localhost:60777/session/048b7600335a83ce170c431cc2d57105/element {"using": "tag name", "value": "body"}
-2025-01-05 19:13:30,190 - DEBUG - Starting new HTTP connection (1): localhost:60777
-2025-01-05 19:13:34,272 - DEBUG - Incremented Retry for (url='/session/048b7600335a83ce170c431cc2d57105/element'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
-2025-01-05 19:13:34,272 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EA7FCAECF0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý')': /session/048b7600335a83ce170c431cc2d57105/element
-2025-01-05 19:13:34,272 - DEBUG - Starting new HTTP connection (2): localhost:60777
-2025-01-05 19:13:38,327 - DEBUG - Incremented Retry for (url='/session/048b7600335a83ce170c431cc2d57105/element'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
-2025-01-05 19:13:38,327 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EA7FCAFFE0>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý')': /session/048b7600335a83ce170c431cc2d57105/element
-2025-01-05 19:13:38,328 - DEBUG - Starting new HTTP connection (3): localhost:60777
-2025-01-05 19:13:42,369 - DEBUG - Incremented Retry for (url='/session/048b7600335a83ce170c431cc2d57105/element'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
-2025-01-05 19:13:42,369 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EA7FCAF920>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý')': /session/048b7600335a83ce170c431cc2d57105/element
-2025-01-05 19:13:42,370 - DEBUG - Starting new HTTP connection (4): localhost:60777
-2025-01-05 19:13:46,416 - ERROR - Beklenmeyen bir hata oluþtu: HTTPConnectionPool(host='localhost', port=60777): Max retries exceeded with url: /session/048b7600335a83ce170c431cc2d57105/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EA7FCAFF20>: Failed to establish a new connection: [WinError 10061] Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý'))
-2025-01-05 19:19:21,207 - INFO -  * Detected change in 'C:\\Users\\LENOVO\\PycharmProjects\\checker_ml\\scraper.py', reloading
-2025-01-05 19:19:26,153 - INFO -  * Restarting with stat
-2025-01-05 19:19:30,274 - WARNING -  * Debugger is active!
-2025-01-05 19:19:30,281 - INFO -  * Debugger PIN: 785-944-511
+2025-01-10 12:08:37,139 - INFO - 127.0.0.1 - - [10/Jan/2025 12:08:37] "GET / HTTP/1.1" 200 -
+2025-01-10 12:08:46,553 - INFO - ====== WebDriver manager ======
+2025-01-10 12:08:48,160 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-10 12:08:48,164 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-01-10 12:08:49,582 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 9111
+2025-01-10 12:08:49,587 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-10 12:08:49,589 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-01-10 12:08:55,061 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 9111
+2025-01-10 12:08:55,193 - INFO - Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
+2025-01-10 12:08:55,194 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe
+2025-01-10 12:08:55,199 - DEBUG - Started executable: `C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe` in a child process with pid: 12992 using 0 to output -3
+2025-01-10 12:08:55,711 - DEBUG - POST http://localhost:50280/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--headless', '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', '--remote-debugging-port=9222', 'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36']}}}}
+2025-01-10 12:08:55,712 - DEBUG - Starting new HTTP connection (1): localhost:50280
+2025-01-10 12:08:57,393 - DEBUG - http://localhost:50280 "POST /session HTTP/1.1" 200 0
+2025-01-10 12:08:57,393 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.265","chrome":{"chromedriverVersion":"131.0.6778.264 (2d05e31515360f4da764174f7c448b33e36da871-refs/branch-heads/6778@{#4323})","userDataDir":"C:\\Users\\LENOVO\\AppData\\Local\\Temp\\scoped_dir12992_638472491"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:9222"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"bdccade5fe37f16086ab6c1e3de4d9aa"}} | headers=HTTPHeaderDict({'Content-Length': '883', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-10 12:08:57,393 - DEBUG - Finished Request
+2025-01-10 12:08:57,393 - DEBUG - POST http://localhost:50280/session/bdccade5fe37f16086ab6c1e3de4d9aa/timeouts {'pageLoad': 30000}
+2025-01-10 12:08:57,395 - DEBUG - http://localhost:50280 "POST /session/bdccade5fe37f16086ab6c1e3de4d9aa/timeouts HTTP/1.1" 200 0
+2025-01-10 12:08:57,395 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-10 12:08:57,395 - DEBUG - Finished Request
+2025-01-10 12:08:57,396 - INFO - WebDriver baÅŸarÄ±yla baÅŸlatÄ±ldÄ±.
+2025-01-10 12:08:57,397 - DEBUG - POST http://localhost:50280/session/bdccade5fe37f16086ab6c1e3de4d9aa/url {'url': 'https://www.gratis.com/gunessiz-bronzlastiricilar/benri-bronzlastirici-mendil-p-10068881'}
+2025-01-10 12:08:57,397 - INFO - WebDriver kapatÄ±lÄ±yor...
+2025-01-10 12:08:57,398 - DEBUG - DELETE http://localhost:50280/session/bdccade5fe37f16086ab6c1e3de4d9aa {}
+2025-01-10 12:08:57,399 - DEBUG - Starting new HTTP connection (2): localhost:50280
+2025-01-10 12:09:04,824 - DEBUG - http://localhost:50280 "POST /session/bdccade5fe37f16086ab6c1e3de4d9aa/url HTTP/1.1" 200 0
+2025-01-10 12:09:04,825 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-10 12:09:04,825 - DEBUG - Finished Request
+2025-01-10 12:09:04,827 - DEBUG - POST http://localhost:50280/session/bdccade5fe37f16086ab6c1e3de4d9aa/element {'using': 'tag name', 'value': 'body'}
+2025-01-10 12:09:04,935 - DEBUG - http://localhost:50280 "DELETE /session/bdccade5fe37f16086ab6c1e3de4d9aa HTTP/1.1" 200 0
+2025-01-10 12:09:04,936 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-10 12:09:04,936 - DEBUG - Finished Request
+2025-01-10 12:09:06,030 - DEBUG - http://localhost:50280 "POST /session/bdccade5fe37f16086ab6c1e3de4d9aa/element HTTP/1.1" 404 0
+2025-01-10 12:09:06,032 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-01-10 12:09:06,032 - DEBUG - Remote response: status=404 | data={"value":{"error":"invalid session id","message":"invalid session id","stacktrace":"\tGetHandleVerifier [0x00C3FD53+23747]\n\t(No symbol) [0x00BC7D54]\n\t(No symbol) [0x00A9BCCD]\n\t(No symbol) [0x00AD3CD2]\n\t(No symbol) [0x00AD4EBD]\n\tGetHandleVerifier [0x00F1AC73+3017699]\n\tGetHandleVerifier [0x00F2B93B+3086507]\n\tGetHandleVerifier [0x00F240F2+3055714]\n\tGetHandleVerifier [0x00CD5AF0+637536]\n\t(No symbol) [0x00BD0A5D]\n\t(No symbol) [0x00BCDA28]\n\t(No symbol) [0x00BCDBC5]\n\t(No symbol) [0x00BC07F0]\n\tBaseThreadInitThunk [0x76BB7BA9+25]\n\tRtlInitializeExceptionChain [0x77B0C0CB+107]\n\tRtlClearBits [0x77B0C04F+191]\n"}} | headers=HTTPHeaderDict({'Content-Length': '638', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-10 12:09:06,032 - DEBUG - Finished Request
+2025-01-10 12:09:06,033 - ERROR - WebDriver ile ilgili bir hata oluÅŸtu: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00C3FD53+23747]
+	(No symbol) [0x00BC7D54]
+	(No symbol) [0x00A9BCCD]
+	(No symbol) [0x00AD3CD2]
+	(No symbol) [0x00AD4EBD]
+	GetHandleVerifier [0x00F1AC73+3017699]
+	GetHandleVerifier [0x00F2B93B+3086507]
+	GetHandleVerifier [0x00F240F2+3055714]
+	GetHandleVerifier [0x00CD5AF0+637536]
+	(No symbol) [0x00BD0A5D]
+	(No symbol) [0x00BCDA28]
+	(No symbol) [0x00BCDBC5]
+	(No symbol) [0x00BC07F0]
+	BaseThreadInitThunk [0x76BB7BA9+25]
+	RtlInitializeExceptionChain [0x77B0C0CB+107]
+	RtlClearBits [0x77B0C04F+191]
+
+2025-01-10 12:09:08,045 - INFO - 127.0.0.1 - - [10/Jan/2025 12:09:08] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-01-10 12:09:08,051 - INFO - 127.0.0.1 - - [10/Jan/2025 12:09:08] "GET / HTTP/1.1" 200 -
