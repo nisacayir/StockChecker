@@ -22,7 +22,7 @@ if os.path.exists('scraper.log'):
     except PermissionError:
         print("Log dosyası başka bir işlem tarafından kullanılıyor. Silme işlemi atlandı.")
 
-# Loglama ayarları
+# Loglama ayarlarına bakma
 logging.basicConfig(
     filename='scraper.log',
     level=logging.DEBUG,

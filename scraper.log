@@ -6,7 +6,7 @@
 2025-01-10 18:16:28,948 - INFO -  * Debugger PIN: 785-944-511
 2025-01-10 18:17:15,173 - INFO - 127.0.0.1 - - [10/Jan/2025 18:17:15] "GET / HTTP/1.1" 200 -
 2025-01-10 18:17:32,111 - INFO - ====== WebDriver manager ======
-2025-01-10 18:17:34,021 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-10 18:17:34,021 - INFO - Get LATEST sdchromedriver version for google-chrome
 2025-01-10 18:17:34,023 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
 2025-01-10 18:17:35,091 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 9121
 2025-01-10 18:17:35,114 - INFO - Get LATEST chromedriver version for google-chrome

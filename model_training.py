@@ -139,7 +139,7 @@ def extract_features(row):
     }
 
 
-#etiketleri hazırlama
+#etiketleri hazırlamak içim
 features = [extract_features(d) for d in data]
 labels = [d["is_stock_available"] for d in data]
 

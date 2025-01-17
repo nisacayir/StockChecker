@@ -21,7 +21,7 @@ last_stock_status = None
 TELEGRAM_BOT_TOKEN = 'a'
 TELEGRAM_CHAT_ID = 'a'
 
-# Model ve vektörleştirici şey
+# Model ve vektörleştirici şey .
 with open("models/stock_availability_model.pkl", "rb") as model_file:
     model = pickle.load(model_file)
 
