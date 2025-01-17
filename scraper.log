@@ -1,64 +1,63 @@
-2025-01-10 12:08:08,217 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-01-10 18:16:26,067 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-2025-01-10 12:08:08,218 - INFO - [33mPress CTRL+C to quit[0m
-2025-01-10 12:08:08,220 - INFO -  * Restarting with stat
-2025-01-10 12:08:09,823 - WARNING -  * Debugger is active!
-2025-01-10 12:08:09,827 - INFO -  * Debugger PIN: 785-944-511
-
-2025-01-10 12:08:37,139 - INFO - 127.0.0.1 - - [10/Jan/2025 12:08:37] "GET / HTTP/1.1" 200 -
-2025-01-10 12:08:46,553 - INFO - ====== WebDriver manager ======
-2025-01-10 12:08:48,160 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-10 12:08:48,164 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
-2025-01-10 12:08:49,582 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 9111
-2025-01-10 12:08:49,587 - INFO - Get LATEST chromedriver version for google-chrome
-2025-01-10 12:08:49,589 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
-2025-01-10 12:08:55,061 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 9111
-2025-01-10 12:08:55,193 - INFO - Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
-2025-01-10 12:08:55,194 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe
-2025-01-10 12:08:55,199 - DEBUG - Started executable: `C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe` in a child process with pid: 12992 using 0 to output -3
-2025-01-10 12:08:55,711 - DEBUG - POST http://localhost:50280/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--headless', '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', '--remote-debugging-port=9222', 'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36']}}}}
-2025-01-10 12:08:55,712 - DEBUG - Starting new HTTP connection (1): localhost:50280
-2025-01-10 12:08:57,393 - DEBUG - http://localhost:50280 "POST /session HTTP/1.1" 200 0
-2025-01-10 12:08:57,393 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.265","chrome":{"chromedriverVersion":"131.0.6778.264 (2d05e31515360f4da764174f7c448b33e36da871-refs/branch-heads/6778@{#4323})","userDataDir":"C:\\Users\\LENOVO\\AppData\\Local\\Temp\\scoped_dir12992_638472491"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:9222"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"bdccade5fe37f16086ab6c1e3de4d9aa"}} | headers=HTTPHeaderDict({'Content-Length': '883', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2025-01-10 12:08:57,393 - DEBUG - Finished Request
-2025-01-10 12:08:57,393 - DEBUG - POST http://localhost:50280/session/bdccade5fe37f16086ab6c1e3de4d9aa/timeouts {'pageLoad': 30000}
-2025-01-10 12:08:57,395 - DEBUG - http://localhost:50280 "POST /session/bdccade5fe37f16086ab6c1e3de4d9aa/timeouts HTTP/1.1" 200 0
-2025-01-10 12:08:57,395 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2025-01-10 12:08:57,395 - DEBUG - Finished Request
-2025-01-10 12:08:57,396 - INFO - WebDriver başarıyla başlatıldı.
-2025-01-10 12:08:57,397 - DEBUG - POST http://localhost:50280/session/bdccade5fe37f16086ab6c1e3de4d9aa/url {'url': 'https://www.gratis.com/gunessiz-bronzlastiricilar/benri-bronzlastirici-mendil-p-10068881'}
-2025-01-10 12:08:57,397 - INFO - WebDriver kapatılıyor...
-2025-01-10 12:08:57,398 - DEBUG - DELETE http://localhost:50280/session/bdccade5fe37f16086ab6c1e3de4d9aa {}
-2025-01-10 12:08:57,399 - DEBUG - Starting new HTTP connection (2): localhost:50280
-2025-01-10 12:09:04,824 - DEBUG - http://localhost:50280 "POST /session/bdccade5fe37f16086ab6c1e3de4d9aa/url HTTP/1.1" 200 0
-2025-01-10 12:09:04,825 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2025-01-10 12:09:04,825 - DEBUG - Finished Request
-2025-01-10 12:09:04,827 - DEBUG - POST http://localhost:50280/session/bdccade5fe37f16086ab6c1e3de4d9aa/element {'using': 'tag name', 'value': 'body'}
-2025-01-10 12:09:04,935 - DEBUG - http://localhost:50280 "DELETE /session/bdccade5fe37f16086ab6c1e3de4d9aa HTTP/1.1" 200 0
-2025-01-10 12:09:04,936 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2025-01-10 12:09:04,936 - DEBUG - Finished Request
-2025-01-10 12:09:06,030 - DEBUG - http://localhost:50280 "POST /session/bdccade5fe37f16086ab6c1e3de4d9aa/element HTTP/1.1" 404 0
-2025-01-10 12:09:06,032 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
-2025-01-10 12:09:06,032 - DEBUG - Remote response: status=404 | data={"value":{"error":"invalid session id","message":"invalid session id","stacktrace":"\tGetHandleVerifier [0x00C3FD53+23747]\n\t(No symbol) [0x00BC7D54]\n\t(No symbol) [0x00A9BCCD]\n\t(No symbol) [0x00AD3CD2]\n\t(No symbol) [0x00AD4EBD]\n\tGetHandleVerifier [0x00F1AC73+3017699]\n\tGetHandleVerifier [0x00F2B93B+3086507]\n\tGetHandleVerifier [0x00F240F2+3055714]\n\tGetHandleVerifier [0x00CD5AF0+637536]\n\t(No symbol) [0x00BD0A5D]\n\t(No symbol) [0x00BCDA28]\n\t(No symbol) [0x00BCDBC5]\n\t(No symbol) [0x00BC07F0]\n\tBaseThreadInitThunk [0x76BB7BA9+25]\n\tRtlInitializeExceptionChain [0x77B0C0CB+107]\n\tRtlClearBits [0x77B0C04F+191]\n"}} | headers=HTTPHeaderDict({'Content-Length': '638', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2025-01-10 12:09:06,032 - DEBUG - Finished Request
-2025-01-10 12:09:06,033 - ERROR - WebDriver ile ilgili bir hata oluştu: Message: invalid session id
+2025-01-10 18:16:26,068 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-10 18:16:26,069 - INFO -  * Restarting with stat
+2025-01-10 18:16:28,942 - WARNING -  * Debugger is active!
+2025-01-10 18:16:28,948 - INFO -  * Debugger PIN: 785-944-511
+2025-01-10 18:17:15,173 - INFO - 127.0.0.1 - - [10/Jan/2025 18:17:15] "GET / HTTP/1.1" 200 -
+2025-01-10 18:17:32,111 - INFO - ====== WebDriver manager ======
+2025-01-10 18:17:34,021 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-10 18:17:34,023 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-01-10 18:17:35,091 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 9121
+2025-01-10 18:17:35,114 - INFO - Get LATEST chromedriver version for google-chrome
+2025-01-10 18:17:35,114 - DEBUG - Starting new HTTPS connection (1): googlechromelabs.github.io:443
+2025-01-10 18:17:36,139 - DEBUG - https://googlechromelabs.github.io:443 "GET /chrome-for-testing/latest-patch-versions-per-build.json HTTP/1.1" 200 9121
+2025-01-10 18:17:36,147 - INFO - Driver [C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe] found in cache
+2025-01-10 18:17:36,147 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe
+2025-01-10 18:17:36,156 - DEBUG - Started executable: `C:\Users\LENOVO\.wdm\drivers\chromedriver\win64\131.0.6778.264\chromedriver-win32/chromedriver.exe` in a child process with pid: 15100 using 0 to output -3
+2025-01-10 18:17:36,663 - DEBUG - POST http://localhost:52163/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'goog:chromeOptions': {'extensions': [], 'args': ['--headless', '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', '--remote-debugging-port=9222', 'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36']}}}}
+2025-01-10 18:17:36,663 - DEBUG - Starting new HTTP connection (1): localhost:52163
+2025-01-10 18:17:38,432 - DEBUG - http://localhost:52163 "POST /session HTTP/1.1" 200 0
+2025-01-10 18:17:38,432 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"131.0.6778.265","chrome":{"chromedriverVersion":"131.0.6778.264 (2d05e31515360f4da764174f7c448b33e36da871-refs/branch-heads/6778@{#4323})","userDataDir":"C:\\Users\\LENOVO\\AppData\\Local\\Temp\\scoped_dir15100_936057132"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:9222"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"c97647c03628a6b440676ecf2ca3a7a5"}} | headers=HTTPHeaderDict({'Content-Length': '883', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-10 18:17:38,432 - DEBUG - Finished Request
+2025-01-10 18:17:38,432 - DEBUG - POST http://localhost:52163/session/c97647c03628a6b440676ecf2ca3a7a5/timeouts {'pageLoad': 30000}
+2025-01-10 18:17:38,432 - DEBUG - http://localhost:52163 "POST /session/c97647c03628a6b440676ecf2ca3a7a5/timeouts HTTP/1.1" 200 0
+2025-01-10 18:17:38,432 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-10 18:17:38,432 - DEBUG - Finished Request
+2025-01-10 18:17:38,432 - INFO - WebDriver başarıyla başlatıldı.
+2025-01-10 18:17:38,432 - DEBUG - POST http://localhost:52163/session/c97647c03628a6b440676ecf2ca3a7a5/url {'url': 'https://www.gratis.com/gunessiz-bronzlastiricilar/benri-bronzlastirici-mendil-p-10068881'}
+2025-01-10 18:17:38,432 - INFO - WebDriver kapatılıyor...
+2025-01-10 18:17:38,432 - DEBUG - DELETE http://localhost:52163/session/c97647c03628a6b440676ecf2ca3a7a5 {}
+2025-01-10 18:17:38,441 - DEBUG - Starting new HTTP connection (2): localhost:52163
+2025-01-10 18:17:48,411 - DEBUG - http://localhost:52163 "POST /session/c97647c03628a6b440676ecf2ca3a7a5/url HTTP/1.1" 200 0
+2025-01-10 18:17:48,412 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-10 18:17:48,412 - DEBUG - Finished Request
+2025-01-10 18:17:48,412 - DEBUG - POST http://localhost:52163/session/c97647c03628a6b440676ecf2ca3a7a5/element {'using': 'tag name', 'value': 'body'}
+2025-01-10 18:17:48,497 - DEBUG - http://localhost:52163 "DELETE /session/c97647c03628a6b440676ecf2ca3a7a5 HTTP/1.1" 200 0
+2025-01-10 18:17:48,497 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-10 18:17:48,498 - DEBUG - Finished Request
+2025-01-10 18:17:49,484 - DEBUG - http://localhost:52163 "POST /session/c97647c03628a6b440676ecf2ca3a7a5/element HTTP/1.1" 404 0
+2025-01-10 18:17:49,485 - WARNING - Connection pool is full, discarding connection: localhost. Connection pool size: 1
+2025-01-10 18:17:49,485 - DEBUG - Remote response: status=404 | data={"value":{"error":"invalid session id","message":"invalid session id","stacktrace":"\tGetHandleVerifier [0x00F6FD53+23747]\n\t(No symbol) [0x00EF7D54]\n\t(No symbol) [0x00DCBCCD]\n\t(No symbol) [0x00E03CD2]\n\t(No symbol) [0x00E04EBD]\n\tGetHandleVerifier [0x0124AC73+3017699]\n\tGetHandleVerifier [0x0125B93B+3086507]\n\tGetHandleVerifier [0x012540F2+3055714]\n\tGetHandleVerifier [0x01005AF0+637536]\n\t(No symbol) [0x00F00A5D]\n\t(No symbol) [0x00EFDA28]\n\t(No symbol) [0x00EFDBC5]\n\t(No symbol) [0x00EF07F0]\n\tBaseThreadInitThunk [0x75987BA9+25]\n\tRtlInitializeExceptionChain [0x7782C0CB+107]\n\tRtlClearBits [0x7782C04F+191]\n"}} | headers=HTTPHeaderDict({'Content-Length': '638', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2025-01-10 18:17:49,485 - DEBUG - Finished Request
+2025-01-10 18:17:49,486 - ERROR - WebDriver ile ilgili bir hata oluştu: Message: invalid session id
 Stacktrace:
-	GetHandleVerifier [0x00C3FD53+23747]
-	(No symbol) [0x00BC7D54]
-	(No symbol) [0x00A9BCCD]
-	(No symbol) [0x00AD3CD2]
-	(No symbol) [0x00AD4EBD]
-	GetHandleVerifier [0x00F1AC73+3017699]
-	GetHandleVerifier [0x00F2B93B+3086507]
-	GetHandleVerifier [0x00F240F2+3055714]
-	GetHandleVerifier [0x00CD5AF0+637536]
-	(No symbol) [0x00BD0A5D]
-	(No symbol) [0x00BCDA28]
-	(No symbol) [0x00BCDBC5]
-	(No symbol) [0x00BC07F0]
-	BaseThreadInitThunk [0x76BB7BA9+25]
-	RtlInitializeExceptionChain [0x77B0C0CB+107]
-	RtlClearBits [0x77B0C04F+191]
+	GetHandleVerifier [0x00F6FD53+23747]
+	(No symbol) [0x00EF7D54]
+	(No symbol) [0x00DCBCCD]
+	(No symbol) [0x00E03CD2]
+	(No symbol) [0x00E04EBD]
+	GetHandleVerifier [0x0124AC73+3017699]
+	GetHandleVerifier [0x0125B93B+3086507]
+	GetHandleVerifier [0x012540F2+3055714]
+	GetHandleVerifier [0x01005AF0+637536]
+	(No symbol) [0x00F00A5D]
+	(No symbol) [0x00EFDA28]
+	(No symbol) [0x00EFDBC5]
+	(No symbol) [0x00EF07F0]
+	BaseThreadInitThunk [0x75987BA9+25]
+	RtlInitializeExceptionChain [0x7782C0CB+107]
+	RtlClearBits [0x7782C04F+191]
 
-2025-01-10 12:09:08,045 - INFO - 127.0.0.1 - - [10/Jan/2025 12:09:08] "[32mPOST / HTTP/1.1[0m" 302 -
-2025-01-10 12:09:08,051 - INFO - 127.0.0.1 - - [10/Jan/2025 12:09:08] "GET / HTTP/1.1" 200 -
+2025-01-10 18:17:51,504 - INFO - 127.0.0.1 - - [10/Jan/2025 18:17:51] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-01-10 18:17:51,509 - INFO - 127.0.0.1 - - [10/Jan/2025 18:17:51] "GET / HTTP/1.1" 200 -
